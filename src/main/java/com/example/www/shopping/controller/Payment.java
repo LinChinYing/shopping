@@ -29,7 +29,7 @@ public class Payment {
 		AioCheckOutALL obj = new AioCheckOutALL();
 		obj.setMerchantTradeNo(bb+"moona"+cc+qq+dd+"peko"+ee);
 		obj.setMerchantTradeDate(v);
-		obj.setTotalAmount("1100");
+		obj.setTotalAmount("120040");
 		obj.setTradeDesc("新的商品");
 		obj.setItemName("購買紀錄");
 		obj.setReturnURL("http://211.23.128.214:5000");
