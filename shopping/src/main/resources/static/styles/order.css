@@ -1,0 +1,28 @@
+.orderDetail {
+    background: #fff;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    /* width:100%;
+    height:100%; */
+    text-align: center;
+
+}
+
+.orderTable {
+    width: 100%;
+    border: solid 1px #e0e3e4;
+}
+
+.cart_product_remove
+{
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

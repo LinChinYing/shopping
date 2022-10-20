@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" href="images/icon_5.jpg" type="image/jpg" sizes="16x16">
+	<title>Flirtatious</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Wish shop project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="styles/letterfont.css">
+
+
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header">
+			<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+				<div class="logo">
+					<a href="index.html">Flirtatious</a>
+				</div>
+				<nav class="main_nav">
+					<ul id="head">
+						<!-- .main_nav ul li a {} -->
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="brands.html">精選品牌</a></li>
+						<li><a href="contact.html">客服</a></li>
+						<li id="ww"><a href="member.html">會員</a></li>
+					</ul>
+				</nav>
+				<div class="header_content ml-auto">
+					<!-- <div class="search header_search">
+						<form action="#">
+							<input type="search" class="search_input" required="required">
+							<button type="submit" id="search_button" class="search_button"><img
+									src="images/magnifying-glass.svg" alt=""></button>
+						</form>
+					</div> -->
+					<div class="shopping">
+						<!-- Cart -->
+						<a href="cartlab.html">
+							<div class="cart">
+								<img src="images/shopping-bag.svg" alt="">
+								<div class="cart_num_container">
+									<div class="cart_num_inner">
+										<div class="cart_num" id="cartNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- Star -->
+						<a href="#">
+							<div class="star">
+								<img src="images/lipstick.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="compareLipNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a> <a href="#">
+							<div class="star">
+								<img src="images/perfume.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="comparePerfumeNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<!-- Avatar -->
+						<a href="memberinfo.html">
+							<div class="avatar">
+								<img src="images/avatar.svg" alt=""> <span id="username"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="logo menu_mm">
+				<a href="#">Flirtatious</a>
+			</div>
+			<!-- <div class="search">
+				<form action="#">
+					<input type="search" class="search_input menu_mm" required="required">
+					<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm"
+							src="images/magnifying-glass.svg" alt=""></button>
+				</form>
+			</div> -->
+			<nav class="menu_nav">
+				<ul class="menu_mm" id="menul">
+					<li class="menu_mm"><a href="index.html">首頁</a></li>
+					<li class="menu_mm"><a href="brands.html">精選品牌</a></li>
+					<li class="menu_mm"><a href="contact.html">客服</a></li>
+					<li class="menu_mm" id="menumem"><a href="member.html">會員</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Home -->
+
+		<div class="home">
+
+			<!-- Home Slider -->
+
+			<div class="home_slider_container">
+
+				<div class="owl-carousel owl-theme home_slider">
+
+					<!-- Home Slider Item -->
+					<div class="owl-item">
+						<div class="home_slider_background"
+							style="background-image: url(./images/home_slider_Dior.jpg)">
+						</div>
+						<div class="home_slider_content">
+							<div class="home_slider_content_inner">
+								<div class="home_slider_title">DIOR</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Home Slider Item -->
+					<div class="owl-item">
+						<div class="home_slider_background"
+							style="background-image: url(./images/home_slider_Chanel.jpg)">
+						</div>
+						<div class="home_slider_content">
+							<div class="home_slider_content_inner">
+								<div class="home_slider_title">CHANEL</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Home Slider Item -->
+					<div class="owl-item">
+						<div class="home_slider_background" style="background-image: url(./images/home_slider_YSL.jpg)">
+						</div>
+						<div class="home_slider_content">
+							<div class="home_slider_content_inner">
+								<div class="home_slider_title">YSL</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Home Slider Nav -->
+
+				<div class="home_slider_next d-flex flex-column align-items-center justify-content-center">
+					<img src="images/arrow_r.png" alt="">
+				</div>
+
+				<!-- Home Slider Dots -->
+
+				<div class="home_slider_dots_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="home_slider_dots">
+									<ul id="home_slider_custom_dots" class="home_slider_custom_dots">
+										<li class="home_slider_custom_dot active">01.
+											<div></div>
+										</li>
+										<li class="home_slider_custom_dot">02.
+											<div></div>
+										</li>
+										<li class="home_slider_custom_dot">03.
+											<div></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- New Arrivals -->
+		<!-- Dior -->
+		<div class="arrivals">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="section_title_container text-center">
+							<div class="section_subtitle">only the best</div>
+							<div class="section_title">
+								<a href="categories_dior.html">Dior</a>
+							</div>
+							<div class="section_subtitle" style="font-size: 200%;">精選</div>
+						</div>
+					</div>
+				</div>
+				<div class="row products_container">
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img id="product_image1" src="images/dior_1.jpg" alt="">
+							</div>
+							<!-- 評價星星 -->
+							<div class="rating rating_5">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts0">
+									<div class="product_name" id="product_name1">
+										<a href="productId1.html">全新《超完美持久唇膏》</a>
+									</div>
+									<div class="product_price">
+										NT$<span id="product_price1">1450</span>
+									</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<button onclick="populateStorage1()" style="border: none;">
+											<img src="images/shopping-bag-white.svg" alt="">
+										</button>
+									</div>
+									<button style="border: none;">
+										<div class="product_fav product_option">+</div>
+									</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img id="product_image2" src="images/dior_2.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts1">
+									<div class="product_name" id="product_name2">
+										<a href="product.html">新品《LADY D-LITE 手袋》</a>
+									</div>
+									<div class="product_price">
+										NT$<span id="product_price2">145000</span>
+									</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<button onclick="populateStorage2()" style="border: none;">
+											<img src="images/shopping-bag-white.svg" alt="">
+										</button>
+									</div>
+									<button style="border: none;">
+										<div class="product_fav product_option">+</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img id="product_image3" src="images/dior_3.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts2">
+									<div class="product_name" id="product_name3">
+										<a href="productId24.html">《花漾迪奧淡香水》</a>
+									</div>
+									<div class="product_price">
+										NT$<span id="product_price3">3600</span>
+									</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<button onclick="populateStorage3()" style="border: none;">
+											<img src="images/shopping-bag-white.svg" alt="">
+										</button>
+									</div>
+									<button onclick="populateStorage3()" style="border: none;">
+										<div class="product_fav product_option">+</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Chanel -->
+		<div class="arrivals">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="section_title_container text-center">
+							<div class="section_subtitle">only the best</div>
+							<div class="section_title">
+								<a href="">Chanel</a>
+							</div>
+							<div class="section_subtitle" style="font-size: 200%;">精選</div>
+						</div>
+					</div>
+				</div>
+				<div class="row products_container">
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img src="images/chanel_1.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts3">
+									<div class="product_name">
+										<a href="product.html">最新推出《香奈兒超炫耀精萃唇膏》</a>
+									</div>
+									<div class="product_price">NT$1,780</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<img src="images/shopping-bag-white.svg" alt="">
+									</div>
+									<div class="product_fav product_option">+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img src="images/chanel_5.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts4">
+									<div class="product_name">
+										<a href="product.html">《CHANEL Double Flap 單肩包》</a>
+									</div>
+									<div class="product_price">NT$215,000</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<img src="images/shopping-bag-white.svg" alt="">
+									</div>
+									<div class="product_fav product_option">+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img src="images/chanel_3.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts5">
+									<div class="product_name">
+										<a href="product.html">《香奈兒摩登COCO系列》</a>
+									</div>
+									<div class="product_price">NT$6,080</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<img src="images/shopping-bag-white.svg" alt="">
+									</div>
+									<div class="product_fav product_option">+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- YSL -->
+		<div class="arrivals">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="section_title_container text-center">
+							<div class="section_subtitle">only the best</div>
+							<div class="section_title">
+								<a href="categories_YSL.html">YSL</a>
+							</div>
+							<div class="section_subtitle" style="font-size: 200%;">精選</div>
+						</div>
+					</div>
+				</div>
+				<div class="row products_container">
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img src="images/YSL_1.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+									class="fa fa-star"></i> <i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts6">
+									<div class="product_name">
+										<a href="productId48.html">《奢華緞面絨霧唇膏》</a>
+									</div>
+									<div class="product_price">NT$1,470</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<img src="images/shopping-bag-white.svg" alt="">
+									</div>
+									<div class="product_fav product_option">+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img src="./images/yslsmall_1.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+									class="fa fa-star"></i> <i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts7">
+									<div class="product_name">
+										<a href="product.html">《YSL光滑皮革馬鞍包》</a>
+									</div>
+									<div class="product_price">NT$70,700</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<img src="images/shopping-bag-white.svg" alt="">
+									</div>
+									<div class="product_fav product_option">+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-lg-4 product_col">
+						<div class="product">
+							<div class="product_image">
+								<img src="./images/yslyellow.jpg" alt="">
+							</div>
+							<div class="rating rating_4">
+								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+									class="fa fa-star"></i> <i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info" id="homeProducts8">
+									<div class="product_name">
+										<a href="product.html">《自由不羈淡香水》</a>
+									</div>
+									<div class="product_price">NT$4,200</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option">
+										<img src="images/shopping-bag-white.svg" alt="">
+									</div>
+									<div class="product_fav product_option">+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Newsletter -->
+		<br>
+		<br>
+
+		<div class="newsletter">
+			<div class="newsletter_content">
+				<div class="newsletter_image" style="background-image: url(images/newsletter.jpg)"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="section_title_container text-center">
+								<div class="section_subtitle">Flirtatious</div>
+								<div class="section_title" id="disword">輸入信箱獲取優惠</div>
+							</div>
+						</div>
+					</div>
+					<div class="row newsletter_container">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="newsletter_form_container">
+								<form action="#">
+									<input type="email" required="required" placeholder="馬上領取優惠" size="100" id="dis">
+									<button type="submit" class="newsletter_button" id="discount"
+										onclick="great()">送出</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="footer_logo">
+							<a href="#">Flirtatious</a>
+						</div>
+						<nav class="footer_nav">
+							<ul id="footul">
+								<li><a href="index.html">首頁</a></li>
+								<li><a href="brands.html">精選品牌</a></li>
+								<li><a href="contact.html">客服</a></li>
+								<li id="footmem"><a href="member.html">會員</a></li>
+							</ul>
+						</nav>
+						<div class="footer_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="copyright">
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="shopping"
+			style="display: block; position: fixed; right: 30px; bottom: 105px; background-color: white; border: brown; border-style: solid; border-width: 7px; border-color: brown; padding-right: 0; margin-left : 0; z-index: 100; ">
+			<!-- Cart -->
+			<a href="cartlab.html" style="margin: 10px 10px 5px 10px; ">
+				<div class="cart">
+					<img src="images/shopping-bag.svg" alt="" style="width: 50px; height: 50px; ">
+					<div class="cart_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="cart_num_inner">
+							<div class="cart_num" id="cart_numf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<!-- Stars -->
+			<a href="#" style="margin: 5px 10px 5px 10px; ">
+				<div class="star">
+					<img src="images/lipstick.png" alt="" style="width: 50px; height: 50px; ">
+					<div class="star_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="star_num_inner">
+							<div class="star_num" id="compareLipNumf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<a href="#" style="margin: 5px 10px 5px 10px; ">
+				<div class="star">
+					<img src="images/perfume.png" alt="" style="width: 50px; height: 50px; ">
+					<div class="star_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="star_num_inner">
+							<div class="star_num" id="comparePerfumeNumf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<!-- Avatar -->
+			<a href="member.html" style="margin: 5px 10px 10px 10px; ">
+				<div class="avatar">
+					<img src="images/avatar.svg" alt="" style="width: 50px; height: 50px; ">
+				</div>
+			</a>
+		</div>
+
+	</div>
+
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger intent="WELCOME" chat-title="ShoppingBot" agent-id="161a243a-d059-488d-9d78-ef3d20263dc2"
+		language-code="zh-tw" style="z-index: 200;">
+	</df-messenger>
+
+	<!-- <script type="text/javascript">
+		const dfMessenger = document.querySelector('df-messenger');
+		dfMessenger.addEventListener('df-messenger-loaded', function () {
+			// Handle event
+			let dfIcon = dfMessenger?.shadowRoot?.querySelector("#widgetIcon");
+			if (dfIcon) {
+				dfIcon.style.right = "1350px";
+			}
+		});
+	</script> -->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/index.js"></script>
+
+	<script>
+		var u = window.sessionStorage;
+		if (u.getItem('name') && u.getItem('password')) {
+			if (u.getItem('name') == "Manager") {
+				var ww = document.getElementById("ww");
+				ww.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var pro = document.createElement('li');
+				pro.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var head = document.getElementById('head');
+				head.appendChild(pro);
+				document.getElementById("username").innerText = u
+					.getItem('name')
+					+ ",您好";
+
+				var menumem = document.getElementById('menumem');
+				menumem.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var ap = document.createElement('li');
+				ap.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var menul = document.getElementById("menul");
+				menul.appendChild(ap);
+
+				var footmem = document.getElementById('footmem');
+				footmem.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var apfoot = document.createElement('li');
+				apfoot.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var footul = document.getElementById("footul");
+				footul.appendChild(ap);
+
+			} else {
+				var ww = document.getElementById("ww");
+				ww.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var pro = document.createElement('li');
+				pro.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var head = document.getElementById('head');
+				head.appendChild(pro);
+				document.getElementById("username").innerText = u
+					.getItem('name')
+					+ ",您好";
+
+				var menumem = document.getElementById('menumem');
+				menumem.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var ap = document.createElement('li');
+				ap.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var menul = document.getElementById("menul");
+				menul.appendChild(ap);
+
+				var footmem = document.getElementById('footmem');
+				footmem.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var apfoot = document.createElement('li');
+				apfoot.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var footul = document.getElementById("footul");
+				footul.appendChild(ap);
+			}
+
+			document.getElementById("dis").value = u.getItem("memmail");
+			if (u.getItem("discount")) {
+				document.getElementById("dis").setAttribute("disabled", "");
+				document.getElementById("discount")
+					.setAttribute("disabled", "");
+				document.getElementById("disword").innerHTML = "<span>您已取得優惠</span>";
+			}
+
+		}
+	</script>
+
+	<script>
+		var u = window.sessionStorage;
+		function great() {
+			if (u.getItem("memmail") != null) {
+				$.ajax({
+					type: "get",
+					url: "/discount/"
+						+ window.sessionStorage.getItem("memmail"),
+					async: false,
+					success: function () {
+						alert("優惠碼已經寄送給您");
+						window.sessionStorage.setItem("discount", "PEKO");
+					}
+				});
+			} else {
+				alert("請登入會員");
+			}
+		}
+
+	</script>
+
+	<!-- 畫面處理、小標數量 -->
+	<script>
+		var cartNum;
+		var compareLipNum;
+		var comparePerfumeNum;
+
+		$(function () {
+
+			var productList = [{
+				productId: 1,
+				productName: "全新《超完美持久唇膏》",
+				productPrice: 1450
+			}, {
+				productId: 99,
+				productName: "新品《LADY D-LITE 手袋》",
+				productPrice: 145000
+			}, {
+				productId: 24,
+				productName: "《花漾迪奧淡香水》",
+				productPrice: 3900
+			}, {
+				productId: 3,
+				productName: "最新推出《香奈兒超炫耀精萃唇膏》",
+				productPrice: 1780
+			}, {
+				productId: 100,
+				productName: "《CHANEL Double Flap 單肩包》",
+				productPrice: 215000
+			}, {
+				productId: 101,
+				productName: "《香奈兒摩登COCO系列》",
+				productPrice: 6080
+			}, {
+				productId: 48,
+				productName: "《奢華緞面絨霧唇膏》",
+				productPrice: 1470
+			}, {
+				productId: 102,
+				productName: "《YSL光滑皮革馬鞍包》",
+				productPrice: 70700
+			}, {
+				productId: 40,
+				productName: "《自由不羈淡香水》",
+				productPrice: 4200
+			},];
+
+			var currentIndex = -1;
+
+			async
+			function downloadAndRefreshUI() {
+				var p = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/products/lists"
+				})
+				var result = await
+				p;
+				productList = JSON.parse(result);
+				refreshUI();
+			}
+			// downloadAndRefreshUI();
+
+			function refreshUI() {
+				// 購物車數量、比較商品數量
+				cartNum = sessionStorage.getItem("cartNum") != undefined ? parseInt(sessionStorage
+					.getItem("cartNum"))
+					: 0;
+				compareLNum = sessionStorage.getItem("compareLNum") != undefined ? parseInt(sessionStorage
+					.getItem("compareLNum"))
+					: 0;
+				comparePNum = sessionStorage.getItem("comparePNum") != undefined ? parseInt(sessionStorage
+					.getItem("comparePNum"))
+					: 0;
+
+				// document.getElementById("cartNum").innerText = cartNum;
+				document.getElementById("compareLipNum").innerText = compareLNum;
+				document.getElementById("comparePerfumeNum").innerText = comparePNum;
+
+				document.getElementById("cart_numf").innerText = cartNum;
+				document.getElementById("compareLipNum").innerText = compareLNum;
+				document.getElementById("comparePerfumeNum").innerText = comparePNum;
+
+			}
+			refreshUI();
+
+		}) // end of init.
+	</script>
+
+</body>
+
+</html>

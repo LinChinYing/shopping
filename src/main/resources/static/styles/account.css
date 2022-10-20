@@ -1,0 +1,99 @@
+.memberpart {
+    width: 100%;
+    height: 1000px;
+}
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-image:url(../projimg/memberback2.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-color:pink;
+}
+
+.frame {
+    width: 500px;
+    margin: auto;
+    background-color:white; 
+    border:solid pink;
+}
+.memframe{
+	height:570px;
+}
+
+form {
+    display: block;
+}
+
+.btn {
+    width: 494px;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size:50px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    
+}
+.memname{
+	border-bottom: none;
+}
+.mail{
+	font-size:30px;
+}
+.meminfo{
+	margin-bottom:0;
+	margin-left:20px;
+	width:400px;
+}
+.info{
+	font-size:30px;
+	
+}
+
+.button {
+    width: 494px;
+    background-color:burlywood;
+    font-size:30px;
+    color:white;
+    border:none;
+}
+.butt{
+	width:140px;
+	background-color:brown;
+	margin-top:50px;
+}
+.logout{
+	margin-top:50px;;
+}
+.forget {
+    width: 100%;
+    margin-bottom: 10%;
+    top: 10px;
+}
+
+
+
+#forgetps {
+    float: left;
+}
+
+.third {
+    width: 25%;
+    margin-right: 10%;
+    height: 40px;
+    float: left inline-start;
+}
+
+.icon {
+    float: left;
+    margin-left: 10%;
+}
+
+.three {
+    width: 25%;
+    height: 40px;
+    margin-left: 10;
+    float: right;
+}

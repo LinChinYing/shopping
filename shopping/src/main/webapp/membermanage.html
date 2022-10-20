@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<link rel="icon" href="images/icon_5.jpg" type="image/jpg" sizes="16x16">
+	<title>Flirtatious</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Wish shop project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+	<link rel="stylesheet" href="styles/account.css">
+</head>
+
+<body onload="searchmem()" )>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header">
+			<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+				<div class="logo">
+					<a href="index.html">Flirtatious</a>
+				</div>
+				<nav class="main_nav">
+					<ul id="head">
+						<!-- .main_nav ul li a {} -->
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="brands.html">精選品牌</a></li>
+						<li><a href="contact.html">客服</a></li>
+						<li id="ww"><a href="member.html">會員</a></li>
+					</ul>
+				</nav>
+				<div class="header_content ml-auto">
+					<!-- <div class="search header_search">
+						<form action="#">
+							<input type="search" class="search_input" required="required">
+							<button type="submit" id="search_button" class="search_button">
+								<img src="images/magnifying-glass.svg" alt="">
+							</button>
+						</form>
+					</div> -->
+					<div class="shopping">
+						<!-- Cart -->
+						<a href="cartlab.html">
+							<div class="cart">
+								<img src="images/shopping-bag.svg" alt="">
+								<div class="cart_num_container">
+									<div class="cart_num_inner">
+										<div class="cart_num" id="cart_num">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- Star -->
+						<a href="#">
+							<div class="star">
+								<img src="images/lipstick.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="compareLipNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="star">
+								<img src="images/perfume.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="comparePerfumeNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<!-- Avatar -->
+						<a href="memberinfo.html">
+							<div class="avatar">
+								<img src="images/avatar.svg" alt=""> <span id="username"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="logo menu_mm">
+				<a href="#">Flirtatious</a>
+			</div>
+			<!-- <div class="search">
+				<form action="#">
+					<input type="search" class="search_input menu_mm" required="required">
+					<button type="submit" id="search_button_menu" class="search_button menu_mm">
+						<img class="menu_mm" src="images/magnifying-glass.svg" alt="">
+					</button>
+				</form>
+			</div> -->
+			<nav class="menu_nav">
+				<ul class="menu_mm" id="menul">
+					<li class="menu_mm"><a href="index.html">首頁</a></li>
+					<li class="menu_mm"><a href="brands.html">精選品牌</a></li>
+					<li class="menu_mm"><a href="contact.html">客服</a></li>
+					<li class="menu_mm" id="menumem"><a href="member.html">會員</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Home -->
+
+
+		<div class="login">
+
+			<div class="memberpart" style="margin-top: 50px;">
+				<div>
+					<h1 style="padding-top: 100px;">會員管理</h1>
+				</div>
+				<div class="frame">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">編號</th>
+								<th scope="col">帳號</th>
+								<th scope="col">手機</th>
+								<th scope="col">信箱</th>
+								<th scope="col">生日</th>
+							</tr>
+						</thead>
+						<tbody id="tb">
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td colspan="2">Larry the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<script>
+		function searchmem() {
+			$.ajax({
+				type: "get",
+				url: "/api/members/",
+				success: function (w) {
+					$("#tb").empty();
+					for (i = 0; i < w.length; i++) {
+						$("#tb").append(`<tr>
+	            	<th>${w[i].memberid}</th>
+	            	<td>${w[i].name}</td>
+	            	<td>${w[i].tel}</td>
+	            	<td>${w[i].memmail}</td>
+	            	<td>${w[i].birth}</td>
+	            	</tr>`);
+					}
+				}
+			});
+		}
+	</script>
+
+
+
+
+
+
+	<script>
+		var u = window.sessionStorage;
+		if (u.getItem('name') && u.getItem('password')) {
+			if (u.getItem('name') == "Manager") {
+				var ww = document.getElementById("ww");
+				ww.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var pro = document.createElement('li');
+				pro.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var head = document.getElementById('head');
+				head.appendChild(pro);
+				document.getElementById("username").innerText = u.getItem('name') + ",您好";
+
+				var menumem = document.getElementById('menumem');
+				menumem.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var ap = document.createElement('li');
+				ap.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var menul = document.getElementById("menul");
+				menul.appendChild(ap);
+
+				var footmem = document.getElementById('footmem');
+				footmem.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var apfoot = document.createElement('li');
+				apfoot.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var footul = document.getElementById("footul");
+				footul.appendChild(ap);
+
+
+			} else {
+				var ww = document.getElementById("ww");
+				ww.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var pro = document.createElement('li');
+				pro.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var head = document.getElementById('head');
+				head.appendChild(pro);
+				document.getElementById("username").innerText = u.getItem('name') + ",您好";
+
+				var menumem = document.getElementById('menumem');
+				menumem.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var ap = document.createElement('li');
+				ap.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var menul = document.getElementById("menul");
+				menul.appendChild(ap);
+
+				var footmem = document.getElementById('footmem');
+				footmem.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var apfoot = document.createElement('li');
+				apfoot.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var footul = document.getElementById("footul");
+				footul.appendChild(ap);
+			}
+
+
+			document.getElementById("dis").value = u.getItem("memmail");
+			if (u.getItem("discount")) {
+				document.getElementById("dis").setAttribute("disabled", "");
+				document.getElementById("discount").setAttribute("disabled", "");
+				document.getElementById("disword").innerHTML = "<span>您已取得優惠囉!</span>";
+			}
+
+		}
+
+	</script>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+	<script src="js/contact_custom.js"></script>
+
+	<script>
+		var cartNum;
+		var compareLNum;
+		var comparePNum;
+
+		$(function () {
+			function refreshUI() {
+				// 購物車數量、比較商品數量
+				cartNum = sessionStorage.getItem("cartNum") != undefined ? parseInt(sessionStorage.getItem("cartNum")) : 0;
+				compareLNum = sessionStorage.getItem("compareLNum") != undefined ? parseInt(sessionStorage.getItem("compareLNum")) : 0;
+				comparePNum = sessionStorage.getItem("comparePNum") != undefined ? parseInt(sessionStorage.getItem("comparePNum")) : 0;
+
+				document.getElementById("cart_num").innerText = cartNum;
+				document.getElementById("compareLipNum").innerText = compareLNum;
+				document.getElementById("comparePerfumeNum").innerText = comparePNum;
+
+				document.getElementById("cart_numf").innerText = cartNum;
+				document.getElementById("compareLipNumf").innerText = compareLNum;
+				document.getElementById("comparePerfumeNumf").innerText = comparePNum;
+
+			}
+			refreshUI();
+		})
+
+	</script>
+
+</body>
+
+</html>

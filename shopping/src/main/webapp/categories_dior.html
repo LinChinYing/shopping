@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" href="images/icon_5.jpg" type="image/jpg" sizes="16x16">
+	<title>Flirtatious - Dior</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Wish shop project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="plugins/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="styles/categories.css">
+	<link rel="stylesheet" type="text/css" href="styles/categories_responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="styles/letterfont.css">
+
+	<style>
+		.product_grid {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			z-index: 1;
+		}
+
+		.product {
+			width: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header">
+			<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+				<div class="logo"><a href="index.html">Flirtatious</a></div>
+				<nav class="main_nav">
+					<ul id="head">
+						<!-- .main_nav ul li a {} -->
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="brands.html">精選品牌</a></li>
+						<li><a href="contact.html">客服</a></li>
+						<li id="ww"><a href="member.html">會員</a></li>
+					</ul>
+				</nav>
+				<div class="header_content ml-auto">
+					<div class="shopping">
+						<!-- Cart -->
+						<a href="cartlab.html">
+							<div class="cart">
+								<img src="images/shopping-bag.svg" alt="">
+								<div class="cart_num_container">
+									<div class="cart_num_inner">
+										<div class="cart_num" id="cart_num">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- Stars : compare -->
+						<a href="#">
+							<div class="star">
+								<img src="images/lipstick.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="compareLipNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="star">
+								<img src="images/perfume.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="comparePerfumeNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- Avatar -->
+						<a href="member.html">
+							<div class="avatar">
+								<img src="images/avatar.svg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="logo menu_mm"><a href="index.html">Flirtatious</a></div>
+			<nav class="menu_nav">
+				<ul class="menu_mm" id="menul">
+					<li class="menu_mm"><a href="index.html">首頁</a></li>
+					<li class="menu_mm"><a href="brands.html">精選品牌</a></li>
+					<li class="menu_mm"><a href="contact.html">客服</a></li>
+					<li class="menu_mm" id="menumem"><a href="member.html">會員</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Home -->
+
+		<div class="home">
+			<div class="home_background parallax-window" data-parallax="scroll"
+				data-image-src="./images/background_1.jpg" data-speed="0.8"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_container">
+							<div class="home_content">
+								<div class="home_title" style="color: rgb(49, 97, 148);font-size: 50px;">
+									Flirtatious<span style="color:black;font-size: 50px">.購物網</span></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Products -->
+
+		<div class="products">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+
+						<!-- Sidebar Left -->
+
+						<div class="sidebar_left clearfix">
+
+							<!-- Categories -->
+							<div class="sidebar_section">
+								<div class="sidebar_title">分類</div>
+								<div class="sidebar_section_content">
+									<ul>
+										<li id="cate_lipstick"><a href="#current_page">口紅</a></li>
+										<li id="cate_bag"><a href="#current_page">包包</a></li>
+										<li id="cate_perfume"><a href="#current_page">香水</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Color : brands -->
+							<div class="sidebar_section">
+								<div class="sidebar_title">品牌</div>
+								<div class="sidebar_section_content sidebar_color_content mCustomScrollbar"
+									data-mcs-theme="minimal-dark">
+									<ul>
+										<li><a href="categories_dior.html"><span style="background:#a3ccff"></span>Dior</a></li>
+										<li><a href="#"><span style="background:#937c6f"></span>Chanel</a></li>
+										<li><a href="categories_YSL.html"><span style="background:#000000"></span>YSL</a></li>
+										<li><a href="#"><span style="background:#ff5c00"></span>Hermes</a></li>
+										<li><a href="#"><span style="background:#a3ffb2"></span>Bobbi Brown</a></li>
+										<li><a href="categories_Gucci.html"><span style="background:#f52832"></span>Gucci</a></li>
+										<li><a href="#"><span style="background:#fdabf4"></span>TomFord</a></li>
+										<li><a href="#"><span style="background:#ecf863"></span>MAC</a></li>
+										<li><a href="#"><span style="background:burlywood; "></span>Burberry</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Price -->
+							<!-- js/categories_custom -->
+							<div class="sidebar_section">
+								<div class="sidebar_title">價格</div>
+								<div class="sidebar_section_content">
+									<div class="filter_price" style="padding-top: 0px; margin-top: 10px;">
+										<div>
+											<h3 style="font-size: 20px;">輸入您的預算!</h3>
+											<input type="number"
+												style="width: 90px; margin-right: 15px; font-size: 20px;"
+												placeholder="最低價"><span style="font-size: 30px;">~</span><input
+												type="number" style="width: 90px; margin-left: 15px; font-size: 20px;"
+												placeholder="最高價">
+										</div>
+										<br>
+										<div>
+											<input type="radio" id="redstick" name="beauty" value="redstick" checked>
+											<label for="redstick" style="font-size:15px;">口紅</label>
+
+											<input type="radio" id="perfume" name="beauty" value="perfume"
+												style="margin-left: 30px;">
+											<label for="perfume" style="font-size:15px;">香水</label>
+
+											<input type="radio" id="bag" name="beauty" value="bag"
+												style="margin-left: 30px;">
+											<label for="bag" style="font-size:15px;">包包</label>
+										</div>
+										<div class="clear_price_btn" id="clear_price_btn">Enter</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Best Sellers -->
+
+							<div class="sidebar_section">
+								<div class="sidebar_title">熱門商品 - <span style="color:rgb(20, 9, 29);"> DIOR</span></div>
+								<div class="sidebar_section_content bestsellers_content">
+									<ul>
+										<!-- Best Seller Item -->
+										<li class="clearfix">
+											<div class="best_image"><img src="./images/diorseller.jpg" alt=""></div>
+											<div class="best_content">
+												<div class="best_title"><a href="productId1.html">迪奧超完美持久唇膏</a>
+												</div>
+												<div class="best_price">$1,450</div>
+											</div>
+											<div class="best_buy side_buy" style="width: 30px; height: 25px"
+												onclick="addToCart(1)"><img src="images/shopping-bag-white.svg" alt="">
+											</div>
+										</li>
+
+										<!-- Best Seller Item -->
+										<li class="clearfix">
+											<div class="best_image"><img src="./images/diorseller2.jpg" alt=""></div>
+											<div class="best_content">
+												<div class="best_title"><a href="productId19.html">30 MONTAIGNE 鏈帶手袋</a>
+												</div>
+												<div class="best_price">$120,000</div>
+											</div>
+											<div class="best_buy side_buy" style="width: 30px; height:25px"
+												onclick="addToCart(19)"><img src="images/shopping-bag-white.svg" alt="">
+											</div>
+										</li>
+
+										<!-- Best Seller Item -->
+										<li class="clearfix">
+											<div class="best_image"><img src="./images/diorseller3.jpg" alt=""></div>
+											<div class="best_content">
+												<div class="best_title"><a href="productId21.html"> LADY DIOR 手袋</a>
+												</div>
+												<div class="best_price">$180,000</div>
+											</div>
+											<div class="best_buy side_buy" style="width: 30px; height:25px"
+												onclick="addToCart(21)"><img src="images/shopping-bag-white.svg" alt="">
+											</div>
+										</li>
+
+										<!-- Best Seller Item -->
+										<li class="clearfix">
+											<div class="best_image"><img src="./images/diorseller4.jpg" alt=""></div>
+											<div class="best_content">
+												<div class="best_title"><a href="productId24.html">花漾迪奧淡香水</a></div>
+												<div class="best_price">$3,600</div>
+											</div>
+											<div class="best_buy side_buy" style="width: 30px; height:25px"
+												onclick="addToCart(24)"><img src="images/shopping-bag-white.svg" alt="">
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+							<!-- 標語 -->
+							<div class="sidebar_section sidebar_options">
+								<div class="sidebar_section_content">
+
+									<!-- Option Item -->
+									<div
+										class="sidebar_option d-flex flex-row align-items-center justify-content-start">
+										<div class="option_image"><img src="images/option_1.png" alt=""></div>
+										<div class="option_content">
+											<div class="option_title">7天鑑賞期</div>
+											<div class="option_subtitle">不需理由</div>
+										</div>
+									</div>
+
+									<!-- Option Item -->
+									<div
+										class="sidebar_option d-flex flex-row align-items-center justify-content-start">
+										<div class="option_image"><img src="images/option_2.png" alt=""></div>
+										<div class="option_content">
+											<div class="option_title">免運費</div>
+											<div class="option_subtitle">全站商品</div>
+										</div>
+									</div>
+
+									<!-- Option Item -->
+									<div
+										class="sidebar_option d-flex flex-row align-items-center justify-content-start">
+										<div class="option_image"><img src="images/option_3.png" alt=""></div>
+										<div class="option_content">
+											<div class="option_title">安全支付</div>
+											<div class="option_subtitle">不用擔心</div>
+										</div>
+									</div>
+
+									<!-- Option Item -->
+									<div
+										class="sidebar_option d-flex flex-row align-items-center justify-content-start">
+										<div class="option_image"><img src="images/option_4.png" alt=""></div>
+										<div class="option_content">
+											<div class="option_title">24HR客服</div>
+											<div class="option_subtitle">聯絡我們</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="col-12">
+						<div class="product_sorting clearfix">
+							<div class="current_page" id="current_page">
+								<!-- Dior -->
+							</div>
+							<div class="sorting" id="showSorting">
+								<ul class="item_sorting">
+									<li>
+										<span class="sorting_text">Show all</span>
+										<i class="fa fa-caret-down" aria-hidden="true"></i>
+										<ul>
+											<li class="product_sorting_btn"
+												data-isotope-option='{ "sortBy": "original-order" }'
+												id="sortedByShowAll"><span>Show
+													All</span></li>
+											<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "price" }'
+												id="sortedByPrice">
+												<span>Price</span>
+											</li>
+											<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "stars" }'
+												id="sortedByStars">
+												<span>Stars</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row products_container">
+					<div class="col">
+
+						<!-- Products -->
+
+						<div class="product_grid" id="product_grid_dior">
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId24.jpg" alt="productId24"></div>
+								<div class="rating rating_4" data-rating="4">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">花漾迪奧淡香水</a></div>
+										<div class="product_price">$3,600</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId25.jpg" alt="productId25"></div>
+								<div class="rating rating_5" data-rating="5">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">JOY BY DIOR 淡香精</a></div>
+										<div class="product_price">$6,650</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId26.jpg" alt="productId26">
+								</div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">J‘ADORE澄淨香氛</a></div>
+										<div class="product_price">$6,450</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId18.jpg" alt="productId18">
+								</div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">大碼 DIORALPS DIOR BOOK TOTE</a>
+										</div>
+										<div class="product_price">$98,000</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId19.jpg" alt="productId19"></div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">30 MONTAIGNE 鏈帶手袋</a></div>
+										<div class="product_price">$120,000</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId20.jpg" alt="productId20"></div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">大碼 DIOR BOBBY 手袋</a></div>
+										<div class="product_price">$135,000</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId21.jpg" alt="productId21">
+								</div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">中碼 LADY DIOR 手袋</a>
+										</div>
+										<div class="product_price">$180,000</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId22.jpg" alt="productId22">
+								</div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">SADDLE 馬鞍袋配肩帶</a></div>
+										<div class="product_price">$120,000</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId23.jpg" alt="productId23"></div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">中碼 DIOR CARO 手袋</a></div>
+										<div class="product_price">$135,000</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId1.jpg" alt="productId1"></div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">迪奧超完美持久唇膏</a></div>
+										<div class="product_price">$1,450</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId16.jpg" alt="productId16"></div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">迪奧癮誘唇膏</a></div>
+										<div class="product_price">$1,450</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Product -->
+							<div class="product">
+								<div class="product_image"><img src="./images/productId17.jpg" alt="productId17"></div>
+								<div class="rating rating_3" data-rating="3">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="product_content clearfix">
+									<div class="product_info">
+										<div class="product_name"><a href="product.html">迪奧超完美持久唇露</a></div>
+										<div class="product_price">$1,450</div>
+									</div>
+									<div class="product_options">
+										<div class="product_buy product_option"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+										<div class="product_fav product_option">+</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Sidebar Right -->
+
+			<div class="sidebar_right clearfix">
+
+				<!-- Promo 1 -->
+				<div class="sidebar_promo_1 sidebar_promo d-flex flex-column align-items-center justify-content-center">
+					<div class="sidebar_promo_image" style="background-image: url(images/sidebar_promo_1.jpg)"></div>
+					<div class="sidebar_promo_content text-center">
+						<div class="sidebar_promo_title">7折<span>起</span></div>
+						<div class="sidebar_promo_subtitle">全站唇膏</div>
+						<div class="sidebar_promo_button"><a href="checkout.html">check out</a></div>
+					</div>
+				</div>
+
+				<!-- Promo 2 -->
+				<div class="sidebar_promo_2 sidebar_promo">
+					<div class="sidebar_promo_image" style="background-image: url(images/sidebar_promo_2.jpg)"></div>
+					<div class="sidebar_promo_content text-center">
+						<div class="sidebar_promo_title">8折<span>起</span></div>
+						<div class="sidebar_promo_subtitle">各式包包及精品香水</div>
+						<div class="sidebar_promo_button"><a href="checkout.html">check out</a></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Extra -->
+
+		<!-- Newsletter -->
+
+		<div class="newsletter">
+			<div class="newsletter_content">
+				<div class="newsletter_image" style="background-image:url(images/newsletter.jpg)"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="section_title_container text-center">
+								<div class="section_subtitle">Flirtatious</div>
+								<div class="section_title" id="disword">輸入信箱獲取優惠</div>
+							</div>
+						</div>
+					</div>
+					<div class="row newsletter_container">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="newsletter_form_container">
+								<form action="#">
+									<input type="email" required="required" placeholder="馬上領取優惠" size="100" id="dis">
+									<button type="submit" class="newsletter_button" id="discount"
+										onclick="great()">送出</button>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="footer_logo"><a href="#">Flirtatious</a></div>
+						<nav class="footer_nav">
+							<ul id="footul">
+								<li><a href="index.html">首頁</a></li>
+								<li><a href="brands.html">精選品牌</a></li>
+								<li><a href="contact.html">客服</a></li>
+								<li id="footmem"><a href="member.html">會員</a></li>
+							</ul>
+						</nav>
+						<div class="footer_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="copyright">
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> All rights reserved
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ---------------------------- 10/14 position: fixed ---------------------------- -->
+		<div class="shopping"
+			style="display: block; position: fixed; right: 30px; bottom: 100px; background-color: white; border: brown; border-style: solid; border-width: 7px; border-color: brown; padding-right: 0; margin-left : 0; z-index: 1000; ">
+			<!-- Cart -->
+			<a href="cartlab.html" style="margin: 10px 10px 5px 10px; ">
+				<div class="cart">
+					<img src="images/shopping-bag.svg" alt="" style="width: 50px; height: 50px; ">
+					<div class="cart_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="cart_num_inner">
+							<div class="cart_num" id="cart_numf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<!-- Stars -->
+			<a href="#" style="margin: 5px 10px 5px 10px; ">
+				<div class="star">
+					<img src="images/lipstick.png" alt="" style="width: 50px; height: 50px; ">
+					<div class="star_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="star_num_inner">
+							<div class="star_num" id="compareLipNumf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<a href="#" style="margin: 5px 10px 5px 10px; ">
+				<div class="star">
+					<img src="images/perfume.png" alt="" style="width: 50px; height: 50px; ">
+					<div class="star_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="star_num_inner">
+							<div class="star_num" id="comparePerfumeNumf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<!-- Avatar -->
+			<a href="member.html" style="margin: 5px 10px 10px 10px; ">
+				<div class="avatar">
+					<img src="images/avatar.svg" alt="" style="width: 50px; height: 50px; ">
+				</div>
+			</a>
+		</div>
+		<!-- ---------------------------- 10/14 position: fixed ---------------------------- -->
+
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+
+	<script>
+		var u = window.sessionStorage;
+		if (u.getItem('name') && u.getItem('password')) {
+			if (u.getItem('name') == "Manager") {
+				var ww = document.getElementById("ww");
+				ww.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var pro = document.createElement('li');
+				pro.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var head = document.getElementById('head');
+				head.appendChild(pro);
+				document.getElementById("username").innerText = u.getItem('name') + ",您好";
+
+				var menumem = document.getElementById('menumem');
+				menumem.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var ap = document.createElement('li');
+				ap.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var menul = document.getElementById("menul");
+				menul.appendChild(ap);
+
+				var footmem = document.getElementById('footmem');
+				footmem.innerHTML = "<a href='membermanage.html'>會員管理</a>";
+				var apfoot = document.createElement('li');
+				apfoot.innerHTML = "<a href='promote.html'>商品管理</a>";
+				var footul = document.getElementById("footul");
+				footul.appendChild(ap);
+
+
+			} else {
+				var ww = document.getElementById("ww");
+				ww.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var pro = document.createElement('li');
+				pro.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var head = document.getElementById('head');
+				head.appendChild(pro);
+				document.getElementById("username").innerText = u.getItem('name') + ",您好";
+
+				var menumem = document.getElementById('menumem');
+				menumem.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var ap = document.createElement('li');
+				ap.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var menul = document.getElementById("menul");
+				menul.appendChild(ap);
+
+				var footmem = document.getElementById('footmem');
+				footmem.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+				var apfoot = document.createElement('li');
+				apfoot.innerHTML = "<a href='promote.html'>推薦商品</a>";
+				var footul = document.getElementById("footul");
+				footul.appendChild(ap);
+			}
+
+
+			document.getElementById("dis").value = u.getItem("memmail");
+			if (u.getItem("discount")) {
+				document.getElementById("dis").setAttribute("disabled", "");
+				document.getElementById("discount").setAttribute("disabled", "");
+				document.getElementById("disword").innerHTML = "<span>您已取得優惠</span>";
+			}
+
+		}
+
+	</script>
+
+	<script>
+		function great() {
+			$.ajax({
+				type: "get",
+				url: "/discount/" + window.sessionStorage.getItem("memmail"),
+				success: function () {
+					alert("優惠碼已經寄送給您");
+					window.sessionStorage.setItem("discount", "PEKO");
+				}
+			});
+		}
+	</script>
+
+	<script>
+		var aPList;
+		var dPList;
+		var comLipList;
+		var comPerfumeList;
+
+		var cl1, cl2, cp1, cp2;
+
+		var cartNum;
+		var compareLNum;
+		var comparePNum;
+
+		$(function () {
+			var diorAllLipsticksList;
+			var diorAllBagsList;
+			var diorAllPerfumesList;
+
+			var diorPriceList;
+			var diorStarsList;
+
+			var diorBagsPriceList;
+
+			var currentIndex = -1;
+
+			async function downloadAndRefreshUI() {
+				// All products
+				var aP = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/products/lists"
+				})
+				var aPResult = await aP;
+				aPList = JSON.parse(aPResult);
+
+				// Dior products
+				var dP = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/dior"
+				})
+				var dPResult = await dP;
+				dPList = JSON.parse(dPResult);
+
+				// Dior all lipsticks
+				var diorAllLipsticks = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/dior/lipsticks"
+				})
+				var diorAllLipsticksResult = await diorAllLipsticks;
+				diorAllLipsticksList = JSON.parse(diorAllLipsticksResult);
+
+				// Dior all bags
+				var dBags = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/dior/bags"
+				})
+				var diorAllBagsResult = await dBags;
+				diorAllBagsList = JSON.parse(diorAllBagsResult);
+
+				// Dior all perfumes
+				var diorAllPerfumes = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/dior/perfumes"
+				})
+				var diorAllPerfumesResult = await diorAllPerfumes;
+				diorAllPerfumesList = JSON.parse(diorAllPerfumesResult);
+
+				// Dior order by price
+				var diorPrice = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/dior/price"
+				})
+				var diorPriceResult = await diorPrice;
+				diorPriceList = JSON.parse(diorPriceResult);
+
+				// Dior order by stars
+				var diorStars = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/dior/stars"
+				})
+				var diorStarsResult = await diorStars;
+				diorStarsList = JSON.parse(diorStarsResult);
+
+				// Compare products for lipsticks
+				var comLip = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/lipsticks/compare"
+				})
+				var comLipResult = await comLip;
+				comLipList = JSON.parse(comLipResult);
+
+				// Compare products for perfumes
+				var comPerfume = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/categories/perfumes/compare"
+				})
+				var comPerfumeResult = await comPerfume;
+				comPerfumeList = JSON.parse(comPerfumeResult);
+
+				// Dior price for bags
+				var diorBagsPrice = $.ajax({
+					type: "get",
+					url: "http://localhost:3000/sorted/price/bags/dior"
+				})
+				var diorBagsPriceResult = await diorBagsPrice;
+				diorBagsPriceList = JSON.parse(diorBagsPriceResult);
+
+				// ------------------------------------------------------
+				refreshUI();
+			}
+			downloadAndRefreshUI();
+
+			function refreshUI() {
+				// 購物車數量、比較商品數量、款式
+				cartNum = sessionStorage.getItem("cartNum") != undefined ? parseInt(sessionStorage.getItem("cartNum")) : 0;
+				compareLNum = sessionStorage.getItem("compareLNum") != undefined ? parseInt(sessionStorage.getItem("compareLNum")) : 0;
+				comparePNum = sessionStorage.getItem("comparePNum") != undefined ? parseInt(sessionStorage.getItem("comparePNum")) : 0;
+				cl1 = sessionStorage.getItem("cl1");
+				cl2 = sessionStorage.getItem("cl2");
+				cp1 = sessionStorage.getItem("cp1");
+				cp2 = sessionStorage.getItem("cp2");
+
+				document.getElementById("cart_num").innerText = cartNum;
+				document.getElementById("compareLipNum").innerText = compareLNum;
+				document.getElementById("comparePerfumeNum").innerText = comparePNum;
+
+				document.getElementById("cart_numf").innerText = cartNum;
+				document.getElementById("compareLipNumf").innerText = compareLNum;
+				document.getElementById("comparePerfumeNumf").innerText = comparePNum;
+
+				// 商品grid
+				$("#product_grid_dior").empty();
+
+				for (let i = 0; i < dPList.length; i++) {
+					let dPItem = dPList[i];
+					let liTemplate =
+						`<!-- Product -->
+						<div class="product">
+							<div class="product_image"><img src="./images/productId${dPItem.productId}.jpg" alt="productId${dPItem.productId}"></div>
+							<div class="rating rating_${dPItem.rating}" data-rating="${dPItem.rating}">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="product_content clearfix">
+								<div class="product_info">
+									<div class="product_name"><a href="productId${dPItem.productId}.html">${dPItem.productName}</a></div>
+									<div class="product_price">$${parseInt(dPItem.productPrice / 1000)},${dPItem.productPrice % 1000 == 0 ? "000" : dPItem.productPrice % 1000}</div>
+								</div>
+								<div class="product_options">
+									<div class="product_buy product_option" onclick="addToCart(${dPItem.productId})"><img src="images/shopping-bag-white.svg"
+										alt=""></div>
+									<div class="product_fav product_option" onclick="pCompare(${dPItem.productId})">+</div>
+								</div>
+							</div>
+						</div>`;
+					$("#product_grid_dior").append(liTemplate);
+				}
+
+				// 各分類按鈕事件
+				$("#cate_lipstick").on("click", function () {
+					$("#product_grid_dior").empty();
+
+					for (let i = 0; i < diorAllLipsticksList.length; i++) {
+						let diorAllLipsticksItem = diorAllLipsticksList[i];
+
+						let liTemplate =
+							`<div class="product">
+						<div class="product_image"><img src="./images/productId${diorAllLipsticksItem.productId}.jpg" alt="productId${diorAllLipsticksItem.productId}"></div>
+						<div class="rating rating_${diorAllLipsticksItem.rating}" data-rating="${diorAllLipsticksItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${diorAllLipsticksItem.productId}.html">${diorAllLipsticksItem.productName}</a></div>
+								<div class="product_price">$${parseInt(diorAllLipsticksItem.productPrice / 1000)},${diorAllLipsticksItem.productPrice % 1000 == 0 ? "000" : diorAllLipsticksItem.productPrice % 1000}</div>
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${diorAllLipsticksItem.productId})"><img src="images/shopping-bag-white.svg"
+									alt=""></div>
+								<div class="product_fav product_option" onclick="pCompare(${diorAllLipsticksItem.productId})">+</div>
+							</div>
+						</div>
+					</div>`;
+
+						$("#product_grid_dior").append(liTemplate);
+					}
+
+				})
+
+				$("#cate_bag").on("click", function () {
+					$("#product_grid_dior").empty();
+
+					for (let i = 0; i < diorAllBagsList.length; i++) {
+						let diorAllBagsItem = diorAllBagsList[i];
+
+						let liTemplate =
+							`<div class="product">
+						<div class="product_image"><img src="./images/productId${diorAllBagsItem.productId}.jpg" alt="productId${diorAllBagsItem.productId}"></div>
+						<div class="rating rating_${diorAllBagsItem.rating}" data-rating="${diorAllBagsItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${diorAllBagsItem.productId}.html">${diorAllBagsItem.productName}</a></div>
+								<div class="product_price">$${parseInt(diorAllBagsItem.productPrice / 1000)},${diorAllBagsItem.productPrice % 1000 == 0 ? "000" : diorAllBagsItem.productPrice % 1000}</div>
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${diorAllBagsItem.productId})"><img src="images/shopping-bag-white.svg"
+									alt=""></div>
+								<div class="product_fav product_option" onclick="pCompare(${diorAllBagsItem.productId})">+</div>
+							</div>
+						</div>
+					</div>`;
+
+						$("#product_grid_dior").append(liTemplate);
+					}
+
+				})
+
+				$("#cate_perfume").on("click", function () {
+					$("#product_grid_dior").empty();
+
+					for (let i = 0; i < diorAllPerfumesList.length; i++) {
+						let diorAllPerfumesItem = diorAllPerfumesList[i];
+
+						let liTemplate =
+							`<div class="product">
+						<div class="product_image"><img src="./images/productId${diorAllPerfumesItem.productId}.jpg" alt="productId${diorAllPerfumesItem.productId}"></div>
+						<div class="rating rating_${diorAllPerfumesItem.rating}" data-rating="${diorAllPerfumesItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${diorAllPerfumesItem.productId}.html">${diorAllPerfumesItem.productName}</a></div>
+								<div class="product_price">$${parseInt(diorAllPerfumesItem.productPrice / 1000)},${diorAllPerfumesItem.productPrice % 1000 == 0 ? "000" : diorAllPerfumesItem.productPrice % 1000}</div>
+							</div>							
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${diorAllPerfumesItem.productId})"><img src="images/shopping-bag-white.svg"
+									alt=""></div>
+								<div class="product_fav product_option" onclick="pCompare(${diorAllPerfumesItem.productId})">+</div>
+							</div>
+						</div>
+					</div>`;
+
+						$("#product_grid_dior").append(liTemplate);
+					}
+
+				})
+
+				$("#sortedByPrice").on("click", function () {
+					$("#product_grid_dior").empty();
+
+					for (let i = 0; i < diorPriceList.length; i++) {
+						let diorPriceItem = diorPriceList[i];
+
+						let liTemplate =
+							`<div class="product">
+						<div class="product_image"><img src="./images/productId${diorPriceItem.productId}.jpg" alt="productId${diorPriceItem.productId}"></div>
+						<div class="rating rating_${diorPriceItem.rating}" data-rating="${diorPriceItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${diorPriceItem.productId}.html">${diorPriceItem.productName}</a></div>
+								<div class="product_price">$${parseInt(diorPriceItem.productPrice / 1000)},${diorPriceItem.productPrice % 1000 == 0 ? "000" : diorPriceItem.productPrice % 1000}</div>
+							</div>							
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${diorPriceItem.productId})"><img src="images/shopping-bag-white.svg"
+									alt=""></div>
+								<div class="product_fav product_option" onclick="pCompare(${diorPriceItem.productId})">+</div>
+							</div>
+						</div>
+					</div>`;
+
+						$("#product_grid_dior").append(liTemplate);
+					}
+
+				})
+
+				$("#sortedByStars").on("click", function () {
+					$("#product_grid_dior").empty();
+
+					for (let i = 0; i < diorStarsList.length; i++) {
+						let diorStarsItem = diorStarsList[i];
+
+						let liTemplate =
+							`<div class="product">
+						<div class="product_image"><img src="./images/productId${diorStarsItem.productId}.jpg" alt="productId${diorStarsItem.productId}"></div>
+						<div class="rating rating_${diorStarsItem.rating}" data-rating="${diorStarsItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${diorStarsItem.productId}.html">${diorStarsItem.productName}</a></div>
+								<div class="product_price">$${parseInt(diorStarsItem.productPrice / 1000)},${diorStarsItem.productPrice % 1000 == 0 ? "000" : diorStarsItem.productPrice % 1000}</div>
+							</div>							
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${diorStarsItem.productId})"><img src="images/shopping-bag-white.svg"
+									alt=""></div>
+								<div class="product_fav product_option" onclick="pCompare(${diorStarsItem.productId})">+</div>
+							</div>
+						</div>
+					</div>`;
+
+						$("#product_grid_dior").append(liTemplate);
+					}
+
+				})
+
+				$("#sortedByShowAll").on("click", function () {
+					$("#product_grid_dior").empty();
+
+					for (let i = 0; i < dPList.length; i++) {
+						let dPItem = dPList[i];
+						let liTemplate =
+							`<!-- Product -->
+								<div class="product">
+									<div class="product_image"><img src="./images/productId${dPItem.productId}.jpg" alt="productId${dPItem.productId}"></div>
+									<div class="rating rating_${dPItem.rating}" data-rating="${dPItem.rating}">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</div>
+									<div class="product_content clearfix">
+										<div class="product_info">
+											<div class="product_name"><a href="productId${dPItem.productId}.html">${dPItem.productName}</a></div>
+											<div class="product_price">$${parseInt(dPItem.productPrice / 1000)},${dPItem.productPrice % 1000 == 0 ? "000" : dPItem.productPrice % 1000}</div>
+										</div>
+										<div class="product_options">
+											<div class="product_buy product_option" onclick="addToCart(${dPItem.productId})"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+											<div class="product_fav product_option" onclick="pCompare(${dPItem.productId})">+</div>
+										</div>
+									</div>
+								</div>`;
+						$("#product_grid_dior").append(liTemplate);
+					}
+
+				})
+
+				// 價格篩選按鈕
+				$("#clear_price_btn").on("click", function () {
+					$("#product_grid_dior").empty();
+
+					var c = $('input[name=beauty]:checked').val();
+
+					if (c == "bag") {
+						for (let i = 0; i < diorBagsPriceList.length; i++) {
+							let diorBagsPriceItem = diorBagsPriceList[i];
+							let liTemplate =
+								`<!-- Product -->
+								<div class="product">
+									<div class="product_image"><img src="./images/productId${diorBagsPriceItem.productId}.jpg" alt="productId${diorBagsPriceItem.productId}"></div>
+									<div class="rating rating_${diorBagsPriceItem.rating}" data-rating="${diorBagsPriceItem.rating}">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</div>
+									<div class="product_content clearfix">
+										<div class="product_info">
+											<div class="product_name"><a href="productId${diorBagsPriceItem.productId}.html">${diorBagsPriceItem.productName}</a></div>
+											<div class="product_price">$${parseInt(diorBagsPriceItem.productPrice / 1000)},${diorBagsPriceItem.productPrice % 1000 == 0 ? "000" : diorBagsPriceItem.productPrice % 1000}</div>
+										</div>
+										<div class="product_options">
+											<div class="product_buy product_option" onclick="addToCart(${diorBagsPriceItem.productId})"><img src="images/shopping-bag-white.svg"
+												alt=""></div>
+											<div class="product_fav product_option" onclick="pCompare(${diorBagsPriceItem.productId})">+</div>
+										</div>
+									</div>
+								</div>`;
+							$("#product_grid_dior").append(liTemplate);
+						}
+					}
+
+				})
+
+			}
+			refreshUI();
+		})  // end of init.
+
+		// 加入購物車
+		function addToCart(id) {
+			for (let i = 0; i < aPList.length; i++) {
+				let aPItem = aPList[i];
+				if (aPItem.productId == id) {
+					var a = confirm("是否要將 " + aPItem.productName + " 加入購物車?");
+					if (a == true) {
+						cartNum += 1;
+						sessionStorage.setItem("cartNum", cartNum);
+						document.getElementById("cart_num").innerText = cartNum;
+						document.getElementById("cart_numf").innerText = cartNum;
+					}
+				}
+			}
+		}
+
+		// 比較商品
+		function pCompare(id) {
+			for (let i = 0; i < aPList.length; i++) {
+				let aPItem = aPList[i];
+				if (aPItem.productId == id) {
+					var a = confirm("是否要將 " + aPItem.productName + " 加入比較?");
+					// 確認加入比較
+					if (a == true) {
+						// 比較的是香水
+						if (aPItem.categoryId == 3) {
+							if (cp1 == undefined) {
+								cp1 = aPItem.productName;
+								sessionStorage.setItem("cp1", cp1);
+								alert("已將 " + cp1 + " 加入比較!");
+								comNumRefresh("p");
+							} else if (cp2 == undefined) {
+								cp2 = aPItem.productName;
+								sessionStorage.setItem("cp2", cp2);
+								var b = confirm("已將 " + cp1 + " 和 " + cp2 + " 加入比較!\n\n是否要進入比較頁面?");
+								comNumRefresh("p");
+								if (b == true) {
+									comparePagePerfume();
+									window.location.hash = "#product_grid_dior";
+								}
+							} else {
+								cp1 = cp2;
+								sessionStorage.setItem("cp1", cp1);
+								cp2 = aPItem.productName;
+								sessionStorage.setItem("cp2", cp2);
+								var b = confirm("已將 " + cp1 + " 和 " + cp2 + " 加入比較!\n\n是否要進入比較頁面?");
+								comNumRefresh("p");
+								if (b == true) {
+									comparePagePerfume();
+									window.location.hash = "#product_grid_dior";
+								}
+							}
+							// 比較的是口紅
+						} else if (aPItem.categoryId == 1) {
+							if (cl1 == undefined) {
+								cl1 = aPItem.productName;
+								sessionStorage.setItem("cl1", cl1);
+								alert("已將 " + cl1 + " 加入比較!");
+								comNumRefresh("l");
+							} else if (cl2 == undefined) {
+								cl2 = aPItem.productName;
+								sessionStorage.setItem("cl2", cl2);
+								var b = confirm("已將 " + cl1 + " 和 " + cl2 + " 加入比較!\n\n是否要進入比較頁面?");
+								comNumRefresh("l");
+								if (b == true) {
+									comparePageLipstick();
+									window.location.hash = "#product_grid_dior";
+								}
+							} else {
+								cl1 = cl2;
+								sessionStorage.setItem("cl1", cl1);
+								cl2 = aPItem.productName;
+								sessionStorage.setItem("cl2", cl2);
+								var b = confirm("已將 " + cl1 + " 和 " + cl2 + " 加入比較!\n\n是否要進入比較頁面?");
+								comNumRefresh("l");
+								if (b == true) {
+									comparePageLipstick();
+									window.location.hash = "#product_grid_dior";
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		function comNumRefresh(cate) {
+			if (cate == "l") {
+				if (compareLNum >= 2) {
+					compareLNum = 2;
+				} else {
+					compareLNum += 1;
+				}
+				sessionStorage.setItem("compareLNum", compareLNum);
+				document.getElementById("compareLipNum").innerText = compareLNum;
+				document.getElementById("compareLipNumf").innerText = compareLNum;
+			} else if (cate == "p") {
+				if (comparePNum >= 2) {
+					comparePNum = 2;
+				} else {
+					comparePNum += 1;
+				}
+				sessionStorage.setItem("comparePNum", comparePNum);
+				document.getElementById("comparePerfumeNum").innerText = comparePNum;
+				document.getElementById("comparePerfumeNumf").innerText = comparePNum;
+			}
+		}
+
+		function comparePageLipstick() {
+			$("#product_grid_dior").empty();
+			var comTemplate = "";
+
+			for (let i = 0; i < comLipList.length; i++) {
+				let comItem = comLipList[i];
+				if (comItem.productName == cl1) {
+					let liTemplate =
+						`<div class="product">
+						<div>
+							<h1 style="text-align: center;">${comItem.bName}</h1>
+						</div>
+						<hr>
+						<div class="product_image"><img src="./images/productId${comItem.productId}.jpg" alt="productId${comItem.productId}" style="display: block; margin: auto;">
+						</div>
+
+						<div class="rating rating_${comItem.rating} st_sz" data-rating="${comItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${comItem.productId}.html" style="font-size: 25px;">${comItem.productName}
+										<span class="product_price">$${parseInt(comItem.productPrice/1000)},${comItem.productPrice%1000==0?"000":comItem.productPrice%1000}</span></a></div>
+
+							</div>							
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${comItem.productId})"><img src="images/shopping-bag-white.svg"
+										alt=""></div>
+							</div>
+							<br><br><br><br><br>
+
+							<div style="height: 80px ;">
+								<h2 style="font-size: 30px;">特色:<br>
+									${comItem.f1}
+								</h2>
+							</div>
+							<br>
+							<hr>
+							<div>
+								<h2 style="font-size: 30px;">妝感:<br>
+									${comItem.f2}
+								</h2>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f3} star_size" data-rating="${comItem.f3}">
+								<h1 style="font-size:25px;">顯色度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f4} star_size" data-rating="${comItem.f4}">
+								<h1 style="font-size:25px;">保濕:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f5} star_size" data-rating="${comItem.f5}">
+								<h1 style="font-size:25px;">遮瑕度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f6} star_size" data-rating="${comItem.f6}">
+								<h1 style="font-size:25px;">不顯唇紋:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f7} star_size" data-rating="${comItem.f7}">
+								<h1 style="font-size:25px;">持久度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f8} star_size" data-rating="${comItem.f8}">
+								<h1 style="font-size:25px;">易卸程度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</div>
+					</div>`;
+
+					comTemplate += liTemplate;
+				} else if (comItem.productName == cl2) {
+					let liTemplate =
+						`<div class="product">
+						<div>
+							<h1 style="text-align: center;">${comItem.bName}</h1>
+						</div>
+						<hr>
+						<div class="product_image"><img src="./images/productId${comItem.productId}.jpg" alt="productId${comItem.productId}" style="display: block; margin: auto;">
+						</div>
+
+						<div class="rating rating_${comItem.rating} st_sz" data-rating="${comItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${comItem.productId}.html" style="font-size: 25px;">${comItem.productName}
+										<span class="product_price">$${parseInt(comItem.productPrice/1000)},${comItem.productPrice%1000==0?"000":comItem.productPrice%1000}</span></a></div>
+
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${comItem.productId})"><img src="images/shopping-bag-white.svg"
+										alt=""></div>
+							</div>
+							<br><br><br><br><br>
+
+							<div style="height: 80px ;">
+								<h2 style="font-size: 30px;">特色:<br>
+									${comItem.f1}
+								</h2>
+							</div>
+							<br>
+							<hr>
+							<div>
+								<h2 style="font-size: 30px;">妝感:<br>
+									${comItem.f2}
+								</h2>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f3} star_size" data-rating="${comItem.f3}">
+								<h1 style="font-size:25px;">顯色度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f4} star_size" data-rating="${comItem.f4}">
+								<h1 style="font-size:25px;">保濕:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f5} star_size" data-rating="${comItem.f5}">
+								<h1 style="font-size:25px;">遮瑕度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f6} star_size" data-rating="${comItem.f6}">
+								<h1 style="font-size:25px;">不顯唇紋:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f7} star_size" data-rating="${comItem.f7}">
+								<h1 style="font-size:25px;">持久度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.f8} star_size" data-rating="${comItem.f8}">
+								<h1 style="font-size:25px;">易卸程度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</div>
+					</div>`;
+
+					comTemplate += liTemplate;
+				}
+			}
+
+			$("#product_grid_dior").append(comTemplate);
+			sessionStorage.setItem("compareLNum", 0);
+			sessionStorage.removeItem("cl1");
+			sessionStorage.removeItem("cl2");
+		}
+
+		function comparePagePerfume() {
+			$("#product_grid_dior").empty();
+			var comTemplate = "";
+
+			for (let i = 0; i < comPerfumeList.length; i++) {
+				let comItem = comPerfumeList[i];
+				if (comItem.productName == cp1) {
+					let liTemplate =
+						`<div class="product">
+						<div>
+							<h1 style="text-align: center;">${comItem.bName}</h1>
+						</div>
+						<hr>
+						<div class="product_image"><img src="./images/productId${comItem.productId}.jpg" alt="productId${comItem.productId}" style="display: block; margin: auto;">
+						</div>
+
+						<div class="rating rating_${comItem.rating} st_sz" data-rating="${comItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${comItem.productId}.html" style="font-size: 25px;">${comItem.productName}
+										<span class="product_price">$${parseInt(comItem.productPrice/1000)},${comItem.productPrice%1000==0?"000":comItem.productPrice%1000}</span></a></div>
+
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${comItem.productId})"><img src="images/shopping-bag-white.svg"
+										alt=""></div>
+							</div>
+							<br><br><br><br><br>
+
+							<div>
+								<h2 style="font-size: 30px;">容量:<br>
+									${comItem.capacity} ml
+								</h2>
+							</div>
+							<hr>
+							<div>
+								<h2 style="font-size: 30px;">產地:<br>
+									${comItem.origin}
+								</h2>
+							</div>
+							<hr>
+							<div style="height: 250px ;">
+								<h2 style="font-size: 30px;">主要香調:<br>
+									${comItem.pF1}
+								</h2>
+							</div>
+							<hr>
+							<div style="height: 300px ;">
+								<h2 style="font-size: 30px;">特色:<br>
+									${comItem.pF2}
+								</h2>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.pF3} star_size" data-rating="${comItem.pF3}">
+								<h1 style="font-size:25px;">持久度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</div>
+					</div>`;
+
+					comTemplate += liTemplate;
+				} else if (comItem.productName == cp2) {
+					let liTemplate =
+						`<div class="product">
+						<div>
+							<h1 style="text-align: center;">${comItem.bName}</h1>
+						</div>
+						<hr>
+						<div class="product_image"><img src="./images/productId${comItem.productId}.jpg" alt="productId${comItem.productId}" style="display: block; margin: auto;">
+						</div>
+
+						<div class="rating rating_${comItem.rating} st_sz" data-rating="${comItem.rating}">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="product_content clearfix">
+							<div class="product_info">
+								<div class="product_name"><a href="productId${comItem.productId}.html" style="font-size: 25px;">${comItem.productName}
+										<span class="product_price">$${parseInt(comItem.productPrice/1000)},${comItem.productPrice%1000==0?"000":comItem.productPrice%1000}</span></a></div>
+
+							</div>
+							<div class="product_options">
+								<div class="product_buy product_option" onclick="addToCart(${comItem.productId})"><img src="images/shopping-bag-white.svg"
+										alt=""></div>
+							</div>
+							<br><br><br><br><br>
+
+							<div>
+								<h2 style="font-size: 30px;">容量:<br>
+									${comItem.capacity} ml
+								</h2>
+							</div>
+							<hr>
+							<div>
+								<h2 style="font-size: 30px;">產地:<br>
+									${comItem.origin}
+								</h2>
+							</div>
+							<hr>
+							<div style="height: 250px ;">
+								<h2 style="font-size: 30px;">主要香調:<br>
+									${comItem.pF1}
+								</h2>
+							</div>
+							<hr>
+							<div style="height: 300px ;">
+								<h2 style="font-size: 30px;">特色:<br>
+									${comItem.pF2}
+								</h2>
+							</div>
+							<hr>
+							<div class="rating rating_com_${comItem.pF3} star_size" data-rating="${comItem.pF3}">
+								<h1 style="font-size:25px;">持久度:</h1>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</div>
+					</div>`;
+
+					comTemplate += liTemplate;
+				}
+			}
+
+			$("#product_grid_dior").append(comTemplate);
+			sessionStorage.setItem("comparePNum", 0);
+			sessionStorage.removeItem("cp1");
+			sessionStorage.removeItem("cp2");
+		}
+
+	</script>
+
+	<!-- 前輩寫好的排序效果js -->
+	<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+	<script src="plugins/malihu-custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+	<script src="plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+	<script src="js/categories_custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<link rel="icon" href="images/icon_5.jpg" type="image/jpg" sizes="16x16">
+	<title>Flirtatious</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Wish shop project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+	<link rel="stylesheet" href="styles/account.css">
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header">
+			<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+				<div class="logo">
+					<a href="index.html">Flirtatious</a>
+				</div>
+				<nav class="main_nav">
+					<ul id="head">
+						<!-- .main_nav ul li a {} -->
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="brands.html">精選品牌</a></li>
+						<li><a href="contact.html">客服</a></li>
+						<li id="ww"><a href="member.html">會員</a></li>
+					</ul>
+				</nav>
+				<div class="header_content ml-auto">
+					<!-- <div class="search header_search">
+						<form action="#">
+							<input type="search" class="search_input" required="required">
+							<button type="submit" id="search_button" class="search_button">
+								<img src="images/magnifying-glass.svg" alt="">
+							</button>
+						</form>
+					</div> -->
+					<div class="shopping">
+						<!-- Cart -->
+						<a href="cartlab.html">
+							<div class="cart">
+								<img src="images/shopping-bag.svg" alt="">
+								<div class="cart_num_container">
+									<div class="cart_num_inner">
+										<div class="cart_num" id="cartNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- Star -->
+						<a href="#">
+							<div class="star">
+								<img src="images/lipstick.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="compareLipNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a> <a href="#">
+							<div class="star">
+								<img src="images/perfume.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="comparePerfumeNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<!-- Avatar -->
+						<a href="memberinfo.html">
+							<div class="avatar">
+								<img src="images/avatar.svg" alt=""> <span id="username"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="logo menu_mm">
+				<a href="#">Flirtatious</a>
+			</div>
+			<!-- <div class="search">
+				<form action="#">
+					<input type="search" class="search_input menu_mm" required="required">
+					<button type="submit" id="search_button_menu" class="search_button menu_mm">
+						<img class="menu_mm" src="images/magnifying-glass.svg" alt="">
+					</button>
+				</form>
+			</div> -->
+			<nav class="menu_nav">
+				<ul class="menu_mm">
+					<li class="menu_mm"><a href="index.html">首頁</a></li>
+					<li class="menu_mm"><a href="brands.html">精選品牌</a></li>
+					<li class="menu_mm"><a href="contact.html">客服</a></li>
+					<li class="menu_mm"><a href="member.html">會員</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<div class="login">
+			<form action="/member" class="Member" method="get">
+				<div class="memberpart" style="margin-top: 50px;">
+					<div>
+						<h1 style="padding-top: 100px;"></h1>
+					</div>
+					<div class="frame">
+
+						<input type="text" class="btn" placeholder="帳號" required="true" name="name"
+							id="name"><br />
+						<br /> <input type="password" class="btn" placeholder="密碼" required="true"
+							name="password" id="password"><br /> <br>
+						<div class="button submit">
+							<button type="submit" class="button" onclick="prop()">登入</button>
+						</div>
+						<div class="forget">
+							<button class="button butt" style="left:0; margin-left:10px;"><a href="forgetacc.html" id="forgett" style="font-size:25px;" target="_blank">忘記密碼</a></button> 
+							<button class="button butt" style="float:right; margin-right:10px;"><a href ="register.html"
+								id="regis" style="font-size:25px;">註冊</a></button>
+						</div>
+
+
+						<br>
+			</form>
+
+		</div>
+
+		<div class="shopping"
+			style="display: block; position: fixed; right: 30px; bottom: 100px; background-color: white; border: brown; border-style: solid; border-width: 7px; border-color: brown; padding-right: 0; margin-left : 0; z-index: 1000; ">
+			<!-- Cart -->
+			<a href="cartlab.html" style="margin: 10px 10px 5px 10px; ">
+				<div class="cart">
+					<img src="images/shopping-bag.svg" alt="" style="width: 50px; height: 50px; ">
+					<div class="cart_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="cart_num_inner">
+							<div class="cart_num" id="cart_numf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<!-- Stars -->
+			<a href="#" style="margin: 5px 10px 5px 10px; ">
+				<div class="star">
+					<img src="images/lipstick.png" alt="" style="width: 50px; height: 50px; ">
+					<div class="star_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="star_num_inner">
+							<div class="star_num" id="compareLipNumf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<a href="#" style="margin: 5px 10px 5px 10px; ">
+				<div class="star">
+					<img src="images/perfume.png" alt="" style="width: 50px; height: 50px; ">
+					<div class="star_num_container" style="top: 33px; left: -7px; height: 25px; width: 25px; ">
+						<div class="star_num_inner">
+							<div class="star_num" id="comparePerfumeNumf" style="font-size: 20px;">0</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<br>
+			<!-- Avatar -->
+			<a href="member.html" style="margin: 5px 10px 10px 10px; ">
+				<div class="avatar">
+					<img src="images/avatar.svg" alt="" style="width: 50px; height: 50px; ">
+				</div>
+			</a>
+		</div>
+
+	</div>
+
+
+
+	</div>
+	<script>
+		var session = window.sessionStorage;
+		function prop() {
+			let names = document.getElementById('name').value;
+			let passwords = document.getElementById('password').value;
+			if (names == "") {
+				window.alert("請輸入帳號");
+				return;
+			}
+
+			if (passwords == "") {
+				window.alert("請輸入密碼");
+				return;
+			}
+			//var p;
+			var tempw;
+			if (names && passwords) {
+				var datas = {
+					name : names,
+					password : passwords
+				};
+				var p = $.ajax({
+					type : "get",
+					url : "/api/members/" + names + "/" + passwords,
+					async : false,
+					success : function(w) {
+						session.setItem("name", w.name);
+						session.setItem("password", w.password);
+						session.setItem("tel", w.tel);
+						session.setItem("id", w.memberid);
+						session.setItem("memmail", w.memmail);
+						session.setItem("birth", w.birth);
+						$.ajax({
+							type : "get",
+							url : "/mail/" + w.memmail
+						})
+					},
+					error : function() {
+						alert("登入失敗");
+					}
+				});
+			}
+		}
+		
+	</script>
+
+	<script>
+		var cartNum;
+		var compareLNum;
+		var comparePNum;
+
+		$(function () {
+			function refreshUI() {
+				// 購物車數量、比較商品數量
+				cartNum = sessionStorage.getItem("cartNum") != undefined ? parseInt(sessionStorage.getItem("cartNum")) : 0;
+				compareLNum = sessionStorage.getItem("compareLNum") != undefined ? parseInt(sessionStorage.getItem("compareLNum")) : 0;
+				comparePNum = sessionStorage.getItem("comparePNum") != undefined ? parseInt(sessionStorage.getItem("comparePNum")) : 0;
+
+				document.getElementById("cart_num").innerText = cartNum;
+				document.getElementById("compareLipNum").innerText = compareLNum;
+				document.getElementById("comparePerfumeNum").innerText = comparePNum;
+
+				document.getElementById("cart_numf").innerText = cartNum;
+				document.getElementById("compareLipNumf").innerText = compareLNum;
+				document.getElementById("comparePerfumeNumf").innerText = comparePNum;
+
+			}
+			refreshUI();
+		})
+
+	</script>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+	<script src="js/contact_custom.js"></script>
+</body>
+
+</html>

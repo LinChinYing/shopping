@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<link rel="icon" href="images/icon_5.jpg" type="image/jpg" sizes="16x16">
+	<title>Flirtatious</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Wish shop project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/contact.css">
+	<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+	<link rel="stylesheet" href="styles/account.css">
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header">
+			<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+				<div class="logo">
+					<a href="index.html">Flirtatious</a>
+				</div>
+				<nav class="main_nav">
+					<ul id="head">
+						<!-- .main_nav ul li a {} -->
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="brands.html">精選品牌</a></li>
+						<li><a href="contact.html">客服</a></li>
+						<li id="ww"><a href="member.html">會員</a></li>
+					</ul>
+				</nav>
+				<div class="header_content ml-auto">
+					<!-- <div class="search header_search">
+						<form action="#">
+							<input type="search" class="search_input" required="required">
+							<button type="submit" id="search_button" class="search_button">
+								<img src="images/magnifying-glass.svg" alt="">
+							</button>
+						</form>
+					</div> -->
+					<div class="shopping">
+						<!-- Cart -->
+						<a href="cartlab.html">
+							<div class="cart">
+								<img src="images/shopping-bag.svg" alt="">
+								<div class="cart_num_container">
+									<div class="cart_num_inner">
+										<div class="cart_num" id="cart_num">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- Stars : compare -->
+						<a href="#">
+							<div class="star">
+								<img src="images/lipstick.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="compareLipNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="star">
+								<img src="images/perfume.png" alt="">
+								<div class="star_num_container">
+									<div class="star_num_inner">
+										<div class="star_num" id="comparePerfumeNum">0</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- Avatar -->
+						<a href="memberinfo.html">
+							<div class="avatar">
+								<img src="images/avatar.svg" alt=""><span id="username"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="logo menu_mm">
+				<a href="#">Flirtatious</a>
+			</div>
+			<!-- <div class="search">
+				<form action="#">
+					<input type="search" class="search_input menu_mm" required="required">
+					<button type="submit" id="search_button_menu" class="search_button menu_mm">
+						<img class="menu_mm" src="images/magnifying-glass.svg" alt="">
+					</button>
+				</form>
+			</div> -->
+			<nav class="menu_nav">
+				<ul class="menu_mm" id="menul">
+					<li class="menu_mm"><a href="index.html">首頁</a></li>
+					<li class="menu_mm"><a href="brands.html">精選品牌</a></li>
+					<li class="menu_mm"><a href="contact.html">客服</a></li>
+					<li class="menu_mm" id="menumem"><a href="member.html">會員</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Home -->
+
+
+		<div class="login">
+			<form action="/renew" class="Member" method="post">
+				<div class="memberpart" style="margin-top: 50px;">
+					<div>
+					</div>
+					<input type="password" class="btn meminfo" placeholder="編號" name="memberid" id="memberid"
+						readonly="readonly" style="visibility:hidden"><br /><br />
+					<div class="frame memframe">
+						<span class="info">帳號:</span><input type="text" class="btn meminfo memname" placeholder="姓名"
+							name="name" id="name" readonly="readonly" style="background-color:transparent;"><br />
+						<span class="info">密碼:</span><input type="password" class="btn meminfo" placeholder="密碼"
+							name="password" id="password"><br />
+						<span class="info">手機:</span><input type="text" class="btn meminfo" placeholder="電話" name="tel"
+							id="tel" maxlength="10"><br />
+						<span class="info">信箱:</span><input type="text" class="btn meminfo mail" placeholder="信箱"
+							name="memmail" id="memmail"><br />
+						<br />
+
+						<a href="" style="font-size:20px; margin-top:20px;">訂單紀錄</a>
+						<br>
+						<input class="button butt" type="submit" value="修改" onclick="ensure()"
+							style="float: right; margin-right:10px;">
+						<input type="text" class="btn meminfo" placeholder="生日" name="birth" id="birth"
+							readonly="readonly" style="visibility:hidden; position:absolute;">
+
+			</form>
+
+
+
+
+			<button class="button butt logout" onclick="fix()" style="float:left; margin-left:10px;">登出</button>
+		</div>
+	</div>
+
+
+
+	</div>
+
+	</div>
+	<script>
+		document.getElementById("name").value = window.sessionStorage
+			.getItem("name");
+		document.getElementById("password").value = window.sessionStorage
+			.getItem("password");
+		document.getElementById("tel").value = window.sessionStorage
+			.getItem("tel");
+		document.getElementById("memberid").value = window.sessionStorage
+			.getItem("id");
+		document.getElementById("memmail").value = window.sessionStorage
+			.getItem("memmail");
+		document.getElementById("birth").value = window.sessionStorage
+			.getItem("birth");
+
+		var session = window.sessionStorage;
+		var meid = document.getElementById("memberid").value;
+		var n = document.getElementById("name").value;
+		var p = document.getElementById("password").value;
+		var t = document.getElementById("tel").value;
+		var m = document.getElementById("memmail").value;
+		var meidid = parseInt(meid);
+
+		function ensure() {
+			session.setItem("n", n);
+			session.setItem("p", p);
+			session.setItem("t", t);
+
+			p = session.getItem("p");
+			t = session.getItem("t");
+		}
+
+
+	</script>
+
+
+
+
+	<script>
+		var u = window.sessionStorage;
+		if (u.getItem('name') && u.getItem('password')) {
+			var ww = document.getElementById("ww");
+			ww.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+			var pro = document.createElement('li');
+			pro.innerHTML = "<a href='promote.html'>推薦商品</a>";
+			var head = document.getElementById('head');
+			head.appendChild(pro);
+			document.getElementById("username").innerText = u.getItem('name')
+				+ ",您好";
+
+			var menume = document.getElementById('menumem');
+			menume.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+			var ap = document.createElement('li');
+			ap.innerHTML = "<a href='promote.html'>推薦商品</a>";
+			var menull = document.getElementById("menul");
+			menull.appendChild(ap);
+
+			var footmem = document.getElementById('footmem');
+			footmem.innerHTML = "<a href='memberinfo.html'>會員資料</a>";
+			var apfoot = document.createElement('li');
+			apfoot.innerHTML = "<a href='promote.html'>推薦商品</a>";
+			var footul = document.getElementById("footul");
+			footul.appendChild(ap);
+		}
+		function fix(event) {
+			event.preventDefault()
+			window.sessionStorage.clear();
+		}
+	</script>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+	<script src="js/contact_custom.js"></script>
+
+	<script>
+		var cartNum;
+		var compareLNum;
+		var comparePNum;
+
+		$(function () {
+			function refreshUI() {
+				// 購物車數量、比較商品數量
+				cartNum = sessionStorage.getItem("cartNum") != undefined ? parseInt(sessionStorage.getItem("cartNum")) : 0;
+				compareLNum = sessionStorage.getItem("compareLNum") != undefined ? parseInt(sessionStorage.getItem("compareLNum")) : 0;
+				comparePNum = sessionStorage.getItem("comparePNum") != undefined ? parseInt(sessionStorage.getItem("comparePNum")) : 0;
+
+				document.getElementById("cart_num").innerText = cartNum;
+				document.getElementById("compareLipNum").innerText = compareLNum;
+				document.getElementById("comparePerfumeNum").innerText = comparePNum;
+
+				document.getElementById("cart_numf").innerText = cartNum;
+				document.getElementById("compareLipNumf").innerText = compareLNum;
+				document.getElementById("comparePerfumeNumf").innerText = comparePNum;
+
+			}
+			refreshUI();
+		})
+
+	</script>
+
+</body>
+
+</html>
